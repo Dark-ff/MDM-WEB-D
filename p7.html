@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Wellness Portal</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-r from-blue-400 to-teal-300 flex items-center justify-center">
+
+    <div class="bg-white p-8 rounded-xl shadow-lg w-96">
+
+        <h2 class="text-2xl font-bold text-center text-blue-600 mb-6">
+            Student Wellness Portal
+        </h2>
+
+        <p class="text-center mb-5 text-gray-600">
+            Frequently Asked Questions
+        </p>
+
+        <!-- FAQ 1 -->
+        <div class="mb-3">
+            <button class="question w-full text-left p-3 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded">
+                How can I manage exam stress?
+            </button>
+
+            <p class="answer hidden p-3 bg-blue-50">
+                Take short breaks, make a study timetable, and get enough sleep.
+            </p>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="mb-3">
+            <button class="question w-full text-left p-3 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded">
+                Where can I get academic help?
+            </button>
+
+            <p class="answer hidden p-3 bg-blue-50">
+                You can contact your teachers, mentors, or academic counsellor.
+            </p>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="mb-3">
+            <button class="question w-full text-left p-3 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded">
+                How can I improve my mental wellness?
+            </button>
+
+            <p class="answer hidden p-3 bg-blue-50">
+                Stay connected with friends, enjoy your hobbies, and take time to relax.
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+
+        // Get all questions
+        let questions = document.querySelectorAll(".question");
+
+        // Add click event to each question
+        questions.forEach(function(question) {
+
+            question.addEventListener("click", function() {
+
+                // Get the answer
+                let answer = question.nextElementSibling;
+
+                // Show / Hide answer
+                answer.classList.toggle("hidden");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
