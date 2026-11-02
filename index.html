@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090b16">
+<title>MDM Web Practicals | Yash</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{sans:["Outfit","sans-serif"]}}}};
+</script>
+<style>
+body{background-image:radial-gradient(circle at 12% 8%,rgba(139,92,246,.16),transparent 28rem),radial-gradient(circle at 90% 85%,rgba(6,182,212,.12),transparent 28rem)}
+.dot-grid{background-image:radial-gradient(rgba(255,255,255,.055) 1px,transparent 1px);background-size:22px 22px}
+.practical-card{transition:transform .22s ease,border-color .22s ease,background .22s ease}
+.practical-card:hover{transform:translateY(-5px)}
+</style>
+</head>
+<body class="min-h-screen bg-[#090b16] text-slate-100 font-sans dot-grid">
+<header class="max-w-6xl mx-auto px-5 pt-14 pb-10 sm:pt-20">
+<div class="flex items-center justify-between gap-4 mb-12">
+<a href="index.html" class="text-sm font-bold tracking-[.22em] text-violet-300">MDM / WEB DESIGN</a>
+<span class="rounded-full border border-violet-400/20 bg-violet-400/10 px-3 py-1.5 text-xs text-violet-200">Practical Collection</span>
+</div>
+<div class="max-w-3xl">
+<p class="text-sm font-semibold uppercase tracking-[.25em] text-cyan-300 mb-4">SB Jain Nagpur</p>
+<h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05] tracking-tight">Web Practicals<span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-300">.</span></h1>
+<p class="mt-5 max-w-2xl text-base sm:text-lg leading-relaxed text-slate-400">A single place to access all HTML, CSS, JavaScript and frontend design practicals. Choose a practical below to open its webpage.</p>
+<div class="mt-8 flex flex-wrap gap-3 text-sm">
+<span class="rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-slate-300">10 Practicals</span>
+<span class="rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-slate-300">HTML · CSS · JavaScript</span>
+<span class="rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-slate-300">By Yash Rajendra Choudhari</span>
+</div>
+</div>
+</header>
+<main class="max-w-6xl mx-auto px-5 pb-16">
+<div class="flex items-end justify-between gap-4 mb-6">
+<div><p class="text-xs font-semibold uppercase tracking-[.22em] text-slate-500">Browse collection</p><h2 class="mt-2 text-2xl sm:text-3xl font-bold">All practicals</h2></div>
+<span class="hidden sm:block text-sm text-slate-500">Select a card to open</span>
+</div>
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<a href="p1.html" class="practical-card group rounded-2xl border border-violet-400/20 bg-slate-900/70 p-6 hover:border-violet-300/60 hover:bg-slate-900"><div class="flex justify-between"><span class="text-xs font-bold tracking-widest text-violet-300">PRACTICAL 01</span><span class="text-slate-500 group-hover:text-violet-300">↗</span></div><h3 class="mt-5 text-xl font-bold">Practical 1</h3><p class="mt-2 text-sm text-slate-400">Open the first web practical.</p><p class="mt-6 text-sm font-semibold text-violet-300">Open practical →</p></a>
+<a href="p2.html" class="practical-card group rounded-2xl border border-cyan-400/20 bg-slate-900/70 p-6 hover:border-cyan-300/60 hover:bg-slate-900"><div class="flex justify-between"><span class="text-xs font-bold tracking-widest text-cyan-300">PRACTICAL 02</span><span class="text-slate-500 group-hover:text-cyan-300">↗</span></div><h3 class="mt-5 text-xl font-bold">Practical 2</h3><p class="mt-2 text-sm text-slate-400">Open the second web practical.</p><p class="mt-6 text-sm font-semibold text-cyan-300">Open practical →</p></a>
+<a href="p3.html" class="practical-card group rounded-2xl border border-fuchsia-400/20 bg-slate-900/70 p-6 hover:border-fuchsia-300/60 hover:bg-slate-900"><div class="flex justify-between"><span class="text-xs font-bold tracking-widest text-fuchsia-300">PRACTICAL 03</span><span class="text-slate-500 group-hover:text-fuchsia-300">↗</span></div><h3 class="mt-5 text-xl font-bold">YASH 2026</h3><p class="mt-2 text-sm text-slate-400">College technical festival invitation page.</p><p class="mt-6 text-sm font-semibold text-fuchsia-300">Open practical →</p></a>
+<a href="p4.html" class="practical-card group rounded-2xl border border-orange-400/20 bg-slate-900/70 p-6 hover:border-orange-300/60 hover:bg-slate-900"><div class="flex justify-between"><span class="text-xs font-bold tracking-widest text-orange-300">PRACTICAL 04</span><span class="text-slate-500 group-hover:text-orange-300">↗</span></div><h3 class="mt-5 text-xl font-bold">UrbanStep Sneakers</h3><p class="mt-2 text-sm text-slate-400">Sneaker store and product showcase.</p><p class="mt-6 text-sm font-semibold text-orange-300">Open practical →</p></a>
+<a href="p5.html" class="practical-card group rounded-2xl border border-emerald-400/20 bg-slate-900/70 p-6 hover:border-emerald-300/60 hover:bg-slate-900"><div class="flex justify-between"><span class="text-xs font-bold tracking-widest text-emerald-300">PRACTICAL 05</span><span class="text-slate-500 group-hover:text-emerald-300">↗</span></div><h3 class="mt-5 text-xl font-bold">Campus Café</h3><p class="mt-2 text-sm text-slate-400">Vegetarian restaurant website.</p><p class="mt-6 text-sm font-semibold text-emerald-300">Open practical →</p></a>
+<a href="p6.html" class="practical-card group rounded-2xl border border-blue-400/20 bg-slate-900/70 p-6 hover:border-blue-300/60 hover:bg-slate-900"><div class="flex justify-between"><span class="text-xs font-bold tracking-widest text-blue-300">PRACTICAL 06</span><span class="text-slate-500 group-hover:text-blue-300">↗</span></div><h3 class="mt-5 text-xl font-bold">Practical 6</h3><p class="mt-2 text-sm text-slate-400">Open the sixth web practical.</p><p class="mt-6 text-sm font-semibold text-blue-300">Open practical →</p></a>
+<a href="p7.html" class="practical-card group rounded-2xl border border-pink-400/20 bg-slate-900/70 p-6 hover:border-pink-300/60 hover:bg-slate-900"><div class="flex justify-between"><span class="text-xs font-bold tracking-widest text-pink-300">PRACTICAL 07</span><span class="text-slate-500 group-hover:text-pink-300">↗</span></div><h3 class="mt-5 text-xl font-bold">Practical 7</h3><p class="mt-2 text-sm text-slate-400">Open the seventh web practical.</p><p class="mt-6 text-sm font-semibold text-pink-300">Open practical →</p></a>
+<a href="p8.html" class="practical-card group rounded-2xl border border-amber-400/20 bg-slate-900/70 p-6 hover:border-amber-300/60 hover:bg-slate-900"><div class="flex justify-between"><span class="text-xs font-bold tracking-widest text-amber-300">PRACTICAL 08</span><span class="text-slate-500 group-hover:text-amber-300">↗</span></div><h3 class="mt-5 text-xl font-bold">Practical 8</h3><p class="mt-2 text-sm text-slate-400">Open the eighth web practical.</p><p class="mt-6 text-sm font-semibold text-amber-300">Open practical →</p></a>
+<a href="p9.html" class="practical-card group rounded-2xl border border-teal-400/20 bg-slate-900/70 p-6 hover:border-teal-300/60 hover:bg-slate-900"><div class="flex justify-between"><span class="text-xs font-bold tracking-widest text-teal-300">PRACTICAL 09</span><span class="text-slate-500 group-hover:text-teal-300">↗</span></div><h3 class="mt-5 text-xl font-bold">Practical 9</h3><p class="mt-2 text-sm text-slate-400">Open the ninth web practical.</p><p class="mt-6 text-sm font-semibold text-teal-300">Open practical →</p></a>
+<a href="p10.html" class="practical-card group rounded-2xl border border-lime-400/20 bg-slate-900/70 p-6 hover:border-lime-300/60 hover:bg-slate-900"><div class="flex justify-between"><span class="text-xs font-bold tracking-widest text-lime-300">PRACTICAL 10</span><span class="text-slate-500 group-hover:text-lime-300">↗</span></div><h3 class="mt-5 text-xl font-bold">Daily Health Tracker</h3><p class="mt-2 text-sm text-slate-400">Track daily habits and calculate a wellness score.</p><p class="mt-6 text-sm font-semibold text-lime-300">Open practical →</p></a>
+<a href="app.html" class="practical-card group rounded-2xl border border-slate-400/20 bg-slate-900/70 p-6 hover:border-slate-300/60 hover:bg-slate-900"><div class="flex justify-between"><span class="text-xs font-bold tracking-widest text-slate-300">EXTRA</span><span class="text-slate-500 group-hover:text-white">↗</span></div><h3 class="mt-5 text-xl font-bold">App</h3><p class="mt-2 text-sm text-slate-400">Open the additional app page.</p><p class="mt-6 text-sm font-semibold text-slate-300">Open app →</p></a>
+</section>
+<div class="mt-10 rounded-2xl border border-white/10 bg-white/[.03] p-5 sm:p-6">
+<p class="text-sm font-semibold text-slate-200">Quick note</p>
+<p class="mt-2 text-sm leading-relaxed text-slate-400">Keep <code class="text-violet-300">index.html</code>, <code class="text-violet-300">app.html</code>, and all <code class="text-violet-300">p1.html</code> to <code class="text-violet-300">p10.html</code> files in the same repository folder. These cards use relative links.</p>
+</div>
+</main>
+<footer class="border-t border-white/5 bg-black/20 px-5 py-6 text-center">
+<p class="text-sm text-slate-500">MDM Web Practicals · SB Jain Nagpur</p>
+<p class="mt-1 text-xs text-slate-600">Designed by Yash Rajendra Choudhari</p>
+</footer>
+</body>
+</html>
